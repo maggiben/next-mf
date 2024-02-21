@@ -16,7 +16,8 @@ const nextConfig = {
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes:{
-          './catalog': "./components/Catalog.js"
+          './Catalog': "./components/Catalog.js",
+          './CatalogWrapper': "./components/CatalogWrapper.js"
         },
         extraOptions: {
           exposePages: true

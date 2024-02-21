@@ -10,6 +10,7 @@ const nextConfig = {
         name: 'main',
         remotes: {
           shop: `shop@http://localhost:3001/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+          'frontend': `frontend@http://localhost:3000/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
